@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plant Disease Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #d7f8dd, #b2f5e0);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1524594143445-58f73b07227e?auto=format&fit=crop&w=1400&q=80')
+      no-repeat center center/cover;
+      height: 85vh;
+      color: white;
+      text-align: center;
+      padding-top: 150px;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 55px;
+      font-weight: 700;
+    }
+
+    p.subtitle {
+      margin-top: 20px;
+      font-size: 22px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 16px 38px;
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+      background: linear-gradient(90deg, #00ff88, #00c853);
+      color: #000;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .btn:hover {
+      transform: scale(1.07) translateY(-4px);
+      box-shadow: 0px 12px 30px rgba(0,0,0,0.4);
+    }
+
+    .features {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 38px;
+      color: #00c853;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .card {
+      width: 300px;
+      padding: 35px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0px 12px 28px rgba(0,0,0,0.18);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0px 18px 35px rgba(0,0,0,0.28);
+    }
+
+    .card h3 {
+      color: #00c853;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #00c853;
+      padding: 18px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="content">
+    <h1>🌱 Plant Disease Detection Portal-AGROBOT</h1>
+    <p class="subtitle">Upload images or describe symptoms. Get instant diagnosis, cause, symptoms & prevention.</p>
+
+    <!-- ⭐ Single Button for Combined App -->
+    <button class="btn" onclick="window.location.href='http://localhost:8501'">
+      Open Plant Disease AI App
+    </button>
+  </div>
+</header>
+
+<section class="features">
+  <h2>Explore Powerful Features</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🖼 Image Disease Detection</h3>
+      <p>Upload leaf images to detect diseases using advanced CNN models.</p>
+    </div>
+
+    <div class="card">
+      <h3>💬 NLP Symptom Checker</h3>
+      <p>Type symptoms like a chatbot & get complete disease details.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Fast & Accurate</h3>
+      <p>Real-time predictions trained on high-quality crop datasets.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Plant Disease AI Portal. All Rights Reserved.
+</footer>
+
+</body>
+</html>
